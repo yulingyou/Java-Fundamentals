@@ -6,8 +6,8 @@ public class Order {
         Order order = new Order();
         order.addAmount(10);
         order.addDiscount(1);
-        Integer total = order.getTotal();
-        System.out.println(total);
+        String friendlyTotal = order.friendlyTotal();
+        System.out.println(friendlyTotal);
     }
     public void addAmount(Integer amount){
         this.total += amount;
@@ -18,5 +18,9 @@ public class Order {
 
     public Integer getTotal(){
         return this.total;
+    }
+
+    private String friendlyTotal(){
+        return String.format("Thanks! The total value of your order is £%d", this.total);
     }
 }
