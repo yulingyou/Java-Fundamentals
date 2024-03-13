@@ -2,10 +2,20 @@ package bites.examples;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        System.out.println(FizzBuzz.play(1));
-        System.out.println(FizzBuzz.play(3));
-        System.out.println(FizzBuzz.play(5));
-        System.out.println(FizzBuzz.play(15));
+        // for loop from 1 to 100
+//        for(Integer counter = 1; counter <= 100 ; counter++){
+//            System.out.println(FizzBuzz.play(counter));
+//        }
+        // while loop from 1 to 100
+//        Integer counter = 0;
+//        while(counter <= 100){
+//            System.out.println(play(counter));
+//            counter ++;
+//        }
+        for(Integer counter = 100; counter >= 1; counter--){
+            System.out.println(play(counter));
+        }
+
     }
 
     private static String play(Integer number) {
