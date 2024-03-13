@@ -15,6 +15,16 @@ public class CheckLeapYear {
             year ++;
         }
         System.out.println(listLeapYear);
+        System.out.println(listLeapYear.set(1,1000));
+        System.out.println(listLeapYear.get(1));
+        System.out.println(listLeapYear);
+        System.out.println(listLeapYear.remove(1));
+        System.out.println(listLeapYear);
+        System.out.println(listLeapYear.add(2025));
+        System.out.println(listLeapYear);
+        for (Integer element : listLeapYear) {
+            System.out.println(element);
+        }
     }
     private static boolean isLeapYear(Integer year){
     if ( year % 400 == 0){
