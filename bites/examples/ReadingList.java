@@ -23,8 +23,8 @@ public class ReadingList {
         Boolean continueSearch = true;
         Integer index = 0;
         while(continueSearch){
-            if(unread[index] == null){
-                unread[index] = book;
+            if(this.unread[index] == null){
+                this.unread[index] = book;
                 continueSearch = false;
             }else{
                 index++;
